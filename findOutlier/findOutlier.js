@@ -15,4 +15,4 @@ const findOutlier = arr => {
     }
 }
 
-console.log(findOutlier([160, 3, 1719, 19, 11, 13, -21]));
+console.log(findOutlier([0, 3, 1719, 19, 11, 13, -21]));
