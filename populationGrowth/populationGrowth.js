@@ -1,5 +1,4 @@
 const nbYear = (p0, percent, aug, p) => {
-    let i = 0
     let pop = p0
     for (i = 0; pop < p; i++) {
         pop = (pop * (percent / 100 + 1)) + aug
