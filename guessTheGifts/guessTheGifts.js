@@ -1,11 +1,11 @@
 const guessTheGifts = (arrWish, arrGifts) => {
     let arrAnswer = []
     arrWish.forEach(elem => {
-        for (i = 0; i < arrGifts.length; i++) {
-            if (elem.size === arrGifts[i].size && elem.clatters === arrGifts[i].clatters &&elem.weight === arrGifts[i].weight) {
+        arrGifts.forEach(element => {
+            if (elem.size === element.size && elem.clatters === element.clatters &&elem.weight === element.weight) {
                 arrAnswer.push(elem.name)
             }
-        }
+        })
     })
     return arrAnswer
 }
